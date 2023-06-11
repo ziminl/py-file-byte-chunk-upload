@@ -2,4 +2,4 @@
 
 
 
-ctrl + shift + i => and see network.
+ctrl + alt + delete => and see network.
