@@ -3,3 +3,8 @@
 
 
 ctrl + alt + delete => and see network.
+
+
+#other
+
+idk
