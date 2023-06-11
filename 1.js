@@ -6,11 +6,9 @@
 function uploadFile(url, file) {
   var chunkSize = 1024;
   var offset = 0;
-
   function uploadChunk() {
     var chunk = file.slice(offset, offset + chunkSize);
     var reader = new FileReader();
-
     reader.onload = function(e) {
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url, true);
@@ -36,7 +34,6 @@ function uploadFile(url, file) {
 
   uploadChunk();
 }
-
 var fileInput = document.getElementById("fileInput");
 fileInput.addEventListener("change", function(event) {
   var file = event.target.files[0];
